@@ -1,9 +1,8 @@
 
-function contents_view(url) {
-    var div = document.getElementById('inner_content');
-    console.log(div);
+function menu_open(elem){
+    elem.classList.add('active');
+};
 
-    // Modify the attribute
-    div.setAttribute('w3-include-html', './html/javascript/flow_1.html');
-    console.log(div);
+function menu_close(elem){
+    elem.classList.remove('active');
 }
